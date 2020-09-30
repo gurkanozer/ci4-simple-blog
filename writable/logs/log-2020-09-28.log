@@ -1,0 +1,505 @@
+CRITICAL - 2020-09-28 10:58:49 --> Undefined variable: array
+#0 C:\xampp\htdocs\blog\app\Views\site\widgets\categoriesWidget.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/widgets/ca...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\site\index.php(16): view('site/widgets/ca...')
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('site/index', Array, true)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/pages/abou...', Array, true)
+#7 C:\xampp\htdocs\blog\app\Controllers\Site\About.php(22): view('site/pages/abou...', Array)
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\About->index()
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\About))
+#10 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-28 12:04:38 --> Undefined variable: post
+#0 C:\xampp\htdocs\blog\app\Views\site\components\postSneak.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/components...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\site\pages\home.php(12): view('site/components...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/pages/home', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Site\Home.php(22): view('site/pages/home', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Home->index()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Home))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 12:04:49 --> Undefined property: stdClass::$category
+#0 C:\xampp\htdocs\blog\app\Views\site\components\postSneak.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/components...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\site\pages\home.php(12): view('site/components...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/pages/home', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Site\Home.php(22): view('site/pages/home', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Home->index()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Home))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 12:19:41 --> Unknown column 'post.title' in 'field list'
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `posts`....')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\blog\app\Models\PostModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\blog\app\Controllers\Site\Home.php(20): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...')
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Home->index()
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Home))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 12:20:08 --> Undefined property: stdClass::$img
+#0 C:\xampp\htdocs\blog\app\Views\site\components\postSneak.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/components...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\site\pages\home.php(12): view('site/components...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/pages/home', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Site\Home.php(23): view('site/pages/home', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Home->index()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Home))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 12:20:23 --> Undefined property: stdClass::$url
+#0 C:\xampp\htdocs\blog\app\Views\site\components\postSneak.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 6, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/components...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\site\pages\home.php(12): view('site/components...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/pages/home', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Site\Home.php(23): view('site/pages/home', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Home->index()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Home))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 12:20:32 --> Undefined property: stdClass::$category_id
+#0 C:\xampp\htdocs\blog\app\Views\site\components\postSneak.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 10, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/components...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\site\pages\home.php(12): view('site/components...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/pages/home', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Site\Home.php(23): view('site/pages/home', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Home->index()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Home))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 12:22:13 --> Undefined property: stdClass::$category_title
+#0 C:\xampp\htdocs\blog\app\Views\site\components\postDetail.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/components...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\site\pages\post.php(10): view('site/components...')
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('site/pages/post', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(26): view('site/pages/post', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 12:24:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`fusce-vestibulum-est-elit-at-ultrices-sapien`' at line 3
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `posts`....')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\blog\app\Models\PostModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(24): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...')
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 12:25:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'posts.url = 'fusce-vestibulum-est-elit-at-ultrices-sapien'' at line 3
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `posts`....')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\blog\app\Models\PostModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(24): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...')
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 12:26:52 --> Column 'is_active' in where clause is ambiguous
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `posts`....')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\blog\app\Models\PostModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(25): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...', Array)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 12:27:15 --> Unknown column 'users.is_active' in 'where clause'
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `posts`....')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\blog\app\Models\PostModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(25): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...', Array)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 12:27:26 --> Column 'is_active' in where clause is ambiguous
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `posts`....')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\blog\app\Models\PostModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(25): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...', Array)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 12:27:49 --> Column 'is_active' in on clause is ambiguous
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `posts`....')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\blog\app\Models\PostModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(25): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...', Array)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 12:27:58 --> Column 'is_active' in on clause is ambiguous
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `posts`....')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\blog\app\Models\PostModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(25): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...', Array)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 12:28:35 --> Trying to get property 'title' of non-object
+#0 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 12:29:30 --> Undefined index: title
+#0 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->index('fusce-vestibulu...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 12:31:07 --> Too few arguments to function App\Models\PostModel::join(), 3 passed in C:\xampp\htdocs\blog\app\Controllers\Site\Home.php on line 20 and exactly 4 expected
+#0 C:\xampp\htdocs\blog\app\Controllers\Site\Home.php(20): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Home->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Home))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 12:59:56 --> Unknown column 'categories.category_title' in 'where clause'
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `posts`....')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `posts`....')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `posts`....')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `posts`....', Array, false)
+#4 C:\xampp\htdocs\blog\app\Models\PostModel.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\blog\app\Controllers\Site\Posts.php(43): App\Models\PostModel->join('categories', 'categories.id= ...', 'posts.id id,pos...', Array)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Posts->categories('edebiyat')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Posts))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 16:55:44 --> Call to undefined method App\Controllers\Admin\EmailSettings::get_all()
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-28 16:56:34 --> Invalid file: index.php
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('index', Array, true)
+#2 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(17): view('index')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-28 16:57:07 --> Invalid file: /.php
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(17): view('/')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-28 16:57:57 --> Undefined variable: result
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 16:58:06 --> Undefined variable: item
+#0 C:\xampp\htdocs\blog\app\Views\admin\pages\user.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 13, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/use...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(14): view('admin/pages/use...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-28 17:01:43 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:02:08 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:02:45 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:06:05 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:06:13 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:06:19 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:06:23 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:06:59 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:07:05 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:07:09 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:07:12 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:07:16 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 15, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:08:10 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:08:40 --> Undefined offset: 0
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 17:49:21 --> Trying to get property 'protocol' of non-object
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\email_settings_form.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/admin/componen...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\admin\pages\email_settings.php(4): view('/admin/componen...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/ema...', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(34): view('admin/pages/ema...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->update()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 17:49:59 --> Undefined property: stdClass::$from
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\email_settings_form.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/admin/componen...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\admin\pages\email_settings.php(4): view('/admin/componen...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/ema...', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(16): view('admin/pages/ema...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->index()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 17:51:19 --> Trying to get property 'protocol' of non-object
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\email_settings_form.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/admin/componen...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\admin\pages\email_settings.php(4): view('/admin/componen...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/ema...', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(34): view('admin/pages/ema...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->update()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 17:52:12 --> Trying to get property 'protocol' of non-object
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\email_settings_form.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/admin/componen...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\admin\pages\email_settings.php(4): view('/admin/componen...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/ema...', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(34): view('admin/pages/ema...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->update()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 17:52:26 --> Trying to get property 'protocol' of non-object
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\email_settings_form.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/admin/componen...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\admin\pages\email_settings.php(4): view('/admin/componen...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/ema...', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(34): view('admin/pages/ema...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->update()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 17:56:31 --> Trying to get property 'protocol' of non-object
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\email_settings_form.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/admin/componen...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\admin\pages\email_settings.php(4): view('/admin/componen...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/ema...', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(31): view('admin/pages/ema...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->update()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 17:57:03 --> Trying to get property 'host' of non-object
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\email_settings_form.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/admin/componen...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\admin\pages\email_settings.php(4): view('/admin/componen...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/ema...', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(31): view('admin/pages/ema...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->update()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 17:58:57 --> Trying to get property 'protocol' of non-object
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\email_settings_form.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/admin/componen...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Views\admin\pages\email_settings.php(4): view('/admin/componen...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/ema...', Array, true)
+#6 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(34): view('admin/pages/ema...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->update()
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-28 18:00:55 --> Undefined variable: session
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\EmailSettings.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\EmailSettings->update()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\EmailSettings))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 18:33:02 --> Invalid file: admin/components/category_modal.php
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/component...')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/component...', Array, true)
+#2 C:\xampp\htdocs\blog\app\Views\admin\pages\categories.php(35): view('admin/component...')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/cat...', Array, true)
+#5 C:\xampp\htdocs\blog\app\Controllers\Admin\Categories.php(15): view('admin/pages/cat...', Array)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Categories->index()
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Categories))
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-09-28 19:08:27 --> Trying to get property 'protocol' of non-object
+#0 C:\xampp\htdocs\blog\app\Controllers\Site\Contact.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Contact->send_email()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Contact))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-28 19:14:42 --> Illegal string offset 'email'
+#0 C:\xampp\htdocs\blog\app\Helpers\tools_helper.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 7, Array)
+#1 C:\xampp\htdocs\blog\app\Controllers\Site\Contact.php(40): send_email('', 'test e postas\xC4\xB1', 'bu bir test ema...', Array, '')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Contact->send_email()
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Contact))
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-28 19:17:56 --> Undefined index: _to
+#0 C:\xampp\htdocs\blog\app\Controllers\Site\Contact.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Site\Contact->send_email()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site\Contact))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

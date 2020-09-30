@@ -27,7 +27,10 @@ class BaseController extends Controller
 	 * @var array
 	 */
 	protected $helpers = [];
-
+    public function __construct()
+    {
+        $this->helpers = array_merge($this->helpers, ['url', 'form','tools','text']);
+    }
 	/**
 	 * Constructor.
 	 */

@@ -1,0 +1,38 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+.btn:focus{
+    box-shadow: none;
+}
+.tab-content{
+    border:1px solid #ddd;
+    border-top: none;
+}
+.custom-file-input ~ .custom-file-label::after {
+    content: "Seç"!important;
+}
+.navbar{
+    background: #fff!important;
+}
+.input-no-border{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color:#2780e3;
+    outline: none;
+    margin: 0px;
+    font-size: 16px;
+}
+.toggler-icon {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+    
+    z-index: 1;
+  }

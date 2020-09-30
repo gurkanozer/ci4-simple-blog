@@ -1,0 +1,301 @@
+CRITICAL - 2020-09-19 04:05:21 --> Undefined property: App\Controllers\Admin\Posts::$model
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 04:05:42 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\blog\app\Models\PostModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(15): App\Models\PostModel->get_all()
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->index()
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 04:07:49 --> Undefined variable: result
+#0 C:\xampp\htdocs\blog\app\Views\admin\pages\post_list.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/pos...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(16): view('admin/pages/pos...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->index()
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 04:12:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(15): App\Models\PostModel->get_all()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 04:13:29 --> Illegal string offset 'id'
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\post.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/component...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Libraries\Blog.php(5): view('admin/component...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\Cell.php(156): App\Libraries\Blog->post_item(Array)
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('App\\Libraries\\B...', Array, 0, 'AppLibrariesBlo...')
+#6 C:\xampp\htdocs\blog\app\Views\admin\pages\post_list.php(14): view_cell('App\\Libraries\\B...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/pos...', Array, true)
+#9 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(16): view('admin/pages/pos...', Array)
+#10 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->index()
+#11 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#12 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-09-19 04:13:39 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/component...', Array, true)
+#2 C:\xampp\htdocs\blog\app\Libraries\Blog.php(5): view('admin/component...', Array)
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\Cell.php(156): App\Libraries\Blog->post_item(Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('App\\Libraries\\B...', Array, 0, 'AppLibrariesBlo...')
+#5 C:\xampp\htdocs\blog\app\Views\admin\pages\post_list.php(14): view_cell('App\\Libraries\\B...', Array)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/pos...', Array, true)
+#8 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(16): view('admin/pages/pos...', Array)
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->index()
+#10 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#11 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-09-19 04:14:30 --> Undefined property: stdClass::$subtitle
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\post.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 4, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/component...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Libraries\Blog.php(5): view('admin/component...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\Cell.php(156): App\Libraries\Blog->post_item(Array)
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('App\\Libraries\\B...', Array, 0, 'AppLibrariesBlo...')
+#6 C:\xampp\htdocs\blog\app\Views\admin\pages\post_list.php(14): view_cell('App\\Libraries\\B...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/pos...', Array, true)
+#9 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(16): view('admin/pages/pos...', Array)
+#10 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->index()
+#11 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#12 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-09-19 04:21:35 --> Undefined property: App\Controllers\Admin\Posts::$model
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->index()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 04:31:17 --> Trying to get property 'fullname' of non-object
+#0 C:\xampp\htdocs\blog\app\Views\admin\pages\user.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/use...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Controllers\Admin\Users.php(12): view('admin/pages/use...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Users->index()
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 04:35:25 --> Trying to get property 'fullname' of non-object
+#0 C:\xampp\htdocs\blog\app\Views\admin\pages\user.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/use...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Controllers\Admin\Users.php(12): view('admin/pages/use...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Users->index()
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 04:36:10 --> Invalid file: /.php
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/', Array, true)
+#2 C:\xampp\htdocs\blog\app\Controllers\Admin\Users.php(14): view('/')
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Users->index()
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Users))
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-19 10:01:00 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/component...', Array, true)
+#1 C:\xampp\htdocs\blog\app\Libraries\Post.php(8): view('admin/component...', Array)
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\Cell.php(156): App\Libraries\Post->post_form(Array)
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('App\\Libraries\\P...', Array, 0, 'AppLibrariesPos...')
+#4 C:\xampp\htdocs\blog\app\Views\admin\pages\post_add.php(4): view_cell('App\\Libraries\\P...', Array)
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/pos...', Array, true)
+#7 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(16): view('admin/pages/pos...', Array)
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#10 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-09-19 10:01:10 --> Undefined variable: validation
+#0 C:\xampp\htdocs\blog\app\Views\admin\components\post_form.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 11, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/component...', Array, true)
+#3 C:\xampp\htdocs\blog\app\Libraries\Post.php(8): view('admin/component...', Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\Cell.php(156): App\Libraries\Post->post_form(Array)
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('App\\Libraries\\P...', Array, 0, 'AppLibrariesPos...')
+#6 C:\xampp\htdocs\blog\app\Views\admin\pages\post_add.php(4): view_cell('App\\Libraries\\P...', Array)
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/pos...', Array, true)
+#9 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(16): view('admin/pages/pos...', Array)
+#10 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#11 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#12 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-09-19 10:03:36 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-09-19 10:04:04 --> Undefined property: App\Controllers\Admin\Posts::$validation
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 42, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 10:04:18 --> Argument 2 passed to CodeIgniter\HTTP\RedirectResponse::to() must be of the type int or null, array given, called in C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php on line 43
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(43): CodeIgniter\HTTP\RedirectResponse->to('/admin/post/add', Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 10:05:13 --> Invalid file: /admin/post/add.php
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/admin/post/add...')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('/admin/post/add', Array, true)
+#2 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(43): view('/admin/post/add', Array)
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-19 10:15:35 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/component...', Array, true)
+#2 C:\xampp\htdocs\blog\app\Libraries\Post.php(8): view('admin/component...', Array)
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\Cell.php(156): App\Libraries\Post->post_form(Array)
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('App\\Libraries\\P...', Array, 0, 'AppLibrariesPos...')
+#5 C:\xampp\htdocs\blog\app\Views\admin\pages\post_add.php(4): view_cell('App\\Libraries\\P...', Array)
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('admin/pages/pos...', Array, true)
+#8 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(16): view('admin/pages/pos...', Array)
+#9 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#10 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#11 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2020-09-19 11:59:38 --> syntax error, unexpected 'public' (T_PUBLIC)
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-19 12:11:55 --> Call to a member function hasMoved() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:26:12 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:27:44 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:27:51 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:28:31 --> Trying to get property 'cover_img' of non-object
+#0 C:\xampp\htdocs\blog\app\Controllers\Admin\Posts.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#3 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-19 13:29:11 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:29:22 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:29:23 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:29:24 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:29:24 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:29:28 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:30:48 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:33:48 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:33:56 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:34:30 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:34:40 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-19 13:36:07 --> Call to a member function getName() on null
+#0 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Admin\Posts->add()
+#1 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Posts))
+#2 C:\xampp\htdocs\blog\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\blog\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
